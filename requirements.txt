@@ -27,7 +27,7 @@ matplotlib-inline==0.1.6
 plotly==5.20.0
 pyLDAvis==3.4.1
 seaborn==0.13.2
-topic-wizard==1.0.2
+# topic-wizard==1.0.2
 
 
 # DATA HANDLING
