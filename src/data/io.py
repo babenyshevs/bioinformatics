@@ -1,3 +1,6 @@
+from typing import List
+
+
 def read_text_from_file(file_path: str) -> dict:
     """
     Reads text from a specified file and returns a dictionary.
@@ -34,3 +37,21 @@ def print_list(lst):
         print_list_as_string(my_list)
     """
     print(" ".join(map(str, lst)))
+
+
+def string_to_list(input_string: str) -> List[str]:
+    """
+    Convert a given string into a list of strings, using a space as the separator.
+
+    Args:
+        input_string (str): The input string containing substrings separated by spaces.
+
+    Returns:
+        List[str]: A list of substrings separated by spaces from the input string.
+
+    Example:
+        >>> input_string = "CGCCCCTCTCGGGGGTGTTCAGTAAACGGCCA GGGCGAGGTATGTGTAAGTGCCAAGGTGCCAG TAGTACCGAGACCGAAAGAAGTATACAGGCGT TAGATCAAGTTTCAGGTGCACGTCGGTGAACC AATCCACCAGCTCCACGTGCAATGTTGGCCTA"
+        >>> string_to_list(input_string)
+        ['CGCCCCTCTCGGGGGTGTTCAGTAAACGGCCA', 'GGGCGAGGTATGTGTAAGTGCCAAGGTGCCAG', 'TAGTACCGAGACCGAAAGAAGTATACAGGCGT', 'TAGATCAAGTTTCAGGTGCACGTCGGTGAACC', 'AATCCACCAGCTCCACGTGCAATGTTGGCCTA']
+    """
+    return input_string.split()
